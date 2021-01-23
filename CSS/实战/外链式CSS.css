@@ -1,0 +1,18 @@
+#spanName{
+	width: 500px;
+	height: 100px;
+	background-color: #7FFFD4;
+			
+}
+a{
+	text-decoration: none; 
+	cursor: pointer;
+}
+#divNamediv{
+	background-color: #7FFFD4;
+	width: 200px;
+	height: 12.5rem;
+	position: absolute;
+	left: 5.5rem;
+	top: 3.125rem;
+}

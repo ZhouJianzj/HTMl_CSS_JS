@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>表格</title>
+	</head>
+	<body>
+		<br><br><br><br>
+		<h2>员工收入表</h2>
+		<hr  >
+		<!-- 表格标签 下面为三行三列的表格 -->
+		<table  border = 1px align = "center" width = "45% " hgiht = "45%">
+			<!-- 表格的头部分 -->
+			<thead>
+			<tr>
+				<!-- 表格的属性标签 -->
+				<th>编号</th>
+				<th>姓名</th>
+				<th>薪水</th>
+			</tr>
+			</thead>
+			
+			
+			<!-- 表格的体标签 -->
+			<tbody>
+			<tr align="center">
+				<!-- 表格行里面的格字标签 -->
+				<td>01</td>
+				<td>周健</td>
+				<!-- 单元格的合并 rowspan 删除下面的单元格-->
+				<td rowspan="2">9999</td>
+			</tr>
+			<tr align ="center">
+				<td>02</td>
+				<td>李美钰</td>
+				
+			</tr>
+			</tbody>
+			
+			
+			<!-- 表格的脚标签 -->
+			<tfoot>
+			<tr align = "center">
+				<!-- 单元格的列的合并 -->
+				<td colspan="2" align = "center">zhoujian</td>
+				
+				<td>1</td>
+			</tr>
+			</tfoot>
+		</table>
+	</body>
+</html>

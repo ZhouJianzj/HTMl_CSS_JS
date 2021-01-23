@@ -1,0 +1,16 @@
+表格
+<table></table>
+ <tr></tr>表示是行
+<td></td>表示是一行里有多少个格子
+<th></th>表示的是表格格字为表格头部的属性标签替换<td></td>
+还有就是thead tbody tfoot标签
+
+还可以设置表格的对齐方式和表格的大小，都是在标签里面添加
+属性  
+1、align 对齐
+2、border 表格的边框
+3、width 宽度像素px，也可以是百分比
+4、height 高度也是一样的
+5、rowspan表格合并：原则是删除掉要合并的下一行在第行的
+     标签里写rowspan
+6、单元格列的合并 colspan 

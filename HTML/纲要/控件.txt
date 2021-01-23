@@ -1,0 +1,17 @@
+file控件
+ 标签的写法：<input type = "file"/>
+ 功能：就是点击上传文件了
+
+hidden控件
+ 标签的写法：<input type = "hidden"/>
+ 功能：不想让别人看见但是也真是存在的，提交数据的时候也存在
+
+文本的只度
+ readonly 和 disable都是可以读不可以修改
+ 具体的写法：<input type = "text" disable/>
+            <input type = "text" readonly/>
+ 区别： readonlg在表单中可以提交数据
+	    disable在表单中不可以提交数据
+		
+设置最大的字符长度
+ 写法<input type = "text" maxLength = "长度">

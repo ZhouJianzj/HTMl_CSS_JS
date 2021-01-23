@@ -1,0 +1,15 @@
+1、段落标记<p></p>
+2、标题<h1...6></h...6>
+3、换行标签<br>是独木标签
+3、横线 <hr>是独木标签
+4、预留格式标签<pre></pre>
+5、删除字<del></del>
+6、插入字<ins></ins>
+7、加粗字<b></b>
+8、斜体字<i></i>
+9、右上/下脚加字 
+<sup></sup>
+<sub></sub>
+10、单选按钮<radio></radio>默认的选择checked
+11、复选按钮<checkbox></checkbox>默认选择也是checked
+12、下拉列表<select></select>默认选择是selected

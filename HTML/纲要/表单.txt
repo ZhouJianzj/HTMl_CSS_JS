@@ -1,0 +1,16 @@
+表单
+1、表单里面的属性
+	action ： 事件 属性是指的是点击submit按钮会把form中的数据传送到对应的uRL
+			  服务器，http：//192.158.111.1/3306/save ，指定数据提交给哪一
+			  个服务器的。
+	method ： 有两个选择一个是get一个是post ，get是可以在地址栏看见传输的数据
+			  post是表示隐藏数据在地址栏看不见数据
+2、表单里面的组件
+	<input type = "submit"></input> 表示的是提交按钮的属性 发送请求的
+		   type = "reset"	 表示的是重置
+		   
+	重点强调：有name的时候就会提交，没有name就不会提交
+		<input type = "text" name = "..."></input>需要指定name 
+		发送到服务器的为https://www.baidu.com/?  userName=你好&password=12344555
+		上面是http规定协议
+		当value没有写的时候默认的是空字符串

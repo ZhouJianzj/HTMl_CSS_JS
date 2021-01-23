@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 上传文件用的 -->
+		<input type="file" />
+		
+		<!-- 看不见但是可以传输数据 -->
+		<form action="adadada" method="get">
+			<input type="hidden" name="hiddenName" value="隐藏的" />
+			<!-- readonlg  and  disable
+			主要的区别在于： readonlg 可以提交数据
+							disable 即使有name和value也提交不了数据-->
+			<input type="text"  readonly name="userName" value="zhoujian" /><br>
+			<input type="text" disabled  name="USERNAME"  value="ZHOUJIAN" /><br>
+			<input type="submit" />
+		</form>
+		限制输入的字符串长度<input type="text"  maxlength="3"/>
+		
+		
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>第二种样式的实现方式 样式块</title>
+	</head>
+	<style type="text/css">
+		/* 前面的id选择器的写法比较重要 #选择器的名字{ 样式块} */
+		#spanName{
+			border: 1px solid red;
+			width: 100px;
+			height: 100px;
+			background-color: darkgray;
+			display: block;
+		}
+	
+		/* 这是一个标签选择器  标签的名字*/
+		div{
+			width: 100px;
+			height: 100px;
+			border: red;
+			background-color: aquamarine;
+			
+		}
+	
+		/* 类选择器的 使用的时候注意 点的形式加类名字 */
+		.myClass{
+			border: 1px solid #FF0000;
+			
+		}
+	</style>
+	<body>
+		<span id="spanName">
+			这是一个id选择器测试
+		</span><br>
+		
+		<div >你的每一次小步快跑</div><br>
+		<div >最终都会影响你的生活</div>
+		<div ></div>
+		
+		<input type="text" class="myClass"/><br>
+		<select name="" class="myClass">
+			<option value="">周健</option>
+			<option value ="">李美钰</option>
+		</select>
+	</body>
+</html>

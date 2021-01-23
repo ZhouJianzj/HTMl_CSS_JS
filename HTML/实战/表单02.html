@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body bgcolor="darkslategray">
+		<!-- 复杂点的表单 -->
+		<form action="http://baidu.com/" >
+			
+		<!-- 	用户注册表的要求
+				用户名：
+				密码：
+				确认密码：
+				性别：
+				爱好：
+				教育：
+				简介： -->
+		<h2 align="center">用户注册</h2>
+			<table align="center">
+				<tr>
+					<td>用户名：</td>
+					<td><input type="text" name="userName"/></td>
+				</tr>
+				<tr>
+					<td>密码：</td>
+					<td><input type="password" name="password" /></td>
+				</tr>
+				<tr>
+					<!-- 	确认密码就不要name去提交了 js代码可以进行判断 -->
+					<td>确认密码：</td>
+					<td><input type="password" /></td>
+				</tr>
+				<tr>
+					<!-- checked 表示是默认的选择 radio是单选按钮但是只有在name相同的时候才会实现单选 -->
+					<td>性别：</td>
+					<td> <input type="radio" name="grander"  />男
+					     <input type="radio" name="grander" checked />女
+					</td>
+				</tr>
+				<tr>
+					<td>爱好：</td>
+					<td><input type="checkbox" name="hobbies" />喝酒
+					<input type="checkbox" name="hobbies"  checked/>抽烟
+					<input type="checkbox" name="hobbies" />烫头
+					</td>
+				</tr>
+				<tr>
+					<!-- 复选框的使用 selected指的就是默认的选择这个选项 -->
+					<td>教育：</td>
+					<td><select name="jiaoyu">
+						<option value ="gz">高中</option>
+						<option value ="dz">大专</option>
+						<option value ="bk" selected>本科</option>
+						<option value ="ss">硕士</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>简介：</td>
+					<td><textarea rows="4" cols="40" name = "jianjie">
+						
+					</textarea></td>
+				</tr>
+				<tr>
+					<td><input type="reset" /></td>
+					<td align="right"><input type="submit"/></td>
+				</tr>
+			</table>
+		</form>
+		<!-- 总结：submit按钮事件提交的时候 接受用户输入的组件是需要name属性 因为数据要像key = value 那样这也是w3c规定的
+				涉及到表格的时候，表格中的单元格是可以直接写入别的标签组件的还可以写入多个
+				单选框： 默认选择是checked name要一样的时候才能实现单选的效果
+				复选框	默认选择是checked 
+				下拉列表 默认选择是selected-->
+	</body>
+</html>

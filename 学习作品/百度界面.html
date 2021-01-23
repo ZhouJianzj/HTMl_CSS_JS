@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>百度</title>
+		<link rel="stylesheet" type="text/css" href="学习作品.css"/>
+		<style type="text/css">
+			#baiDuTuBiaoDiv{
+				width: ;
+				/* 设置一下出现的位置 */
+				position: absolute;
+				top: 50;
+				left: 50%;
+				margin-left: -135px;
+			}
+			
+			#spanShuoSou{
+				position: absolute;
+				left: 50%;
+				top: 180px ;
+				margin-left:-220px ;
+				
+			}
+			.shuRu{ 
+				border-radius: 10px;
+				width: 392px;
+				height: 30px;
+				outline: none;
+			}
+			.anNiu{
+				
+				width: 90px;
+				height: 37px;
+				background-color: #4e6ef2;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="shangBianJie">
+			<table  style="width:500px ;">
+				<tr>
+					<td>新闻</td>
+					<td>hao123</td>
+					<td>地图</td>
+					<td>直播</td>
+					<td>视频</td>
+					<td>贴吧</td>
+					<td>学术</td>
+					<td>更多</td>
+				</tr> 
+			</table>
+			
+			<!-- <table >
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table> -->
+		</div>
+		<!-- 这是百度的图标 -->
+		<div id="baiDuTuBiaoDiv">
+			<img src="img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png"  width="270" height="129">
+		</div>
+		
+		
+			<span id="spanShuoSou">
+				<form action="http://www.baidu.com/" method="post">
+					<input type="text" class="shuRu" name="inputTest" />
+					<input type="submit" class="anNiu" value="百度一下" style="color: aliceblue;"/>
+				</form>
+			</span>
+		
+	</body>
+</html>
