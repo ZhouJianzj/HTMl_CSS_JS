@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>函数</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function sum(a,b){
+				alert(a + b);
+			}
+		</script>
+		<!-- 按钮事件的点击触发 -->
+		<input type="button" value="sum" onclick = "sum(20,20)"/>
+		<!-- 下面输出的结果是 一个字符串拼接  输出的内容的是 zhoujianundefined -->
+		<input type="button" value="字符串拼接" onclick="sum('zhoujian')" />
+		<!-- 多余的参数传不进去 -->
+		<input type="button" value="参数传递超过" onclick="sum(1,1,3)" />
+		
+		<script type="text/javascript">
+			var name = "周健"
+			var userName = function(){
+				 name = "李美钰"
+				alert(name)
+			}
+			userName()
+			//内部函数赋值完了 输出的结果就是李美钰
+			console.log(name)
+			alert(name)
+		</script>
+		
+		<!-- 下面演示的是没有加var 的变量出现在任何地方都是全局的变量 -->
+		<script type="text/javascript">
+			var a = function(){
+				num = 100;
+				
+			}
+			a()
+			// 在这里是可以访问a的
+			alert(a)
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,29 @@
+数据类型
+
+ 原始类型
+ 引用类型
+	NAN         			不是一个数字 not a nummber
+	
+	
+	
+	引用数据类型
+	3、object以及它的子类
+	
+	原始数据类型
+	2、undefined			没有定义的数据
+	4、string
+	5、Null	
+	6、boolean
+	1、Number
+	
+	当中涉及到一个运算符typeof
+		作用是动态的判断变量的类型的返回的结果只有一下的集中类型,
+		为什么要动态判断的判断变量的类型呢使用为变量声明的时候是使用的var 
+		如何使用typeof运算符呢！
+		typeof 变量名 == typeof 变量名
+		undefined
+		Number
+		Object
+		String
+		function
+		boolean
