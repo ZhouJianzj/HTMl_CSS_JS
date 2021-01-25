@@ -7,5 +7,35 @@
 	<body>
 		<!--  -->
 		<input type="button"  onclick="alert('你好周健')" value="点击"/>
+		<input type="button" id="button1" value="按钮1 " />
+		<script type="text/javascript">
+			// 纯js代码实现事件
+			document.getElementById("button1").onclick = function(){
+				alert("nihao")
+			}
+			
+			// 当标签的个js代码位置调换的饿时候js代码在前标签在后的时候会报错，就像上面的代码的的顺序，解决的方法入下
+			// 表示的是在页面全部加载完毕之后在进行时间的交互
+			window.onload = read
+			function read(){
+				document.getElementById("button2").onclick = function(){
+					alert("你好中国")
+				}
+			}
+		</script>
+		<input type="button"  id="button2" value="按钮2" />
+		
+		<!-- 小小的实现  点击按钮3实现文本块的边按钮 -->
+		<input type="button" id="button3" value="button3" />
+		<input type="text" id = "text1"/ 
+		<script type="text/javascript">
+		<script>
+			document.getElementById("button3").onclick = function(){
+				var text = document.getElementById("text1")
+			text.type = "button"
+			text.value = "按钮"
+				}
+			
+		</script>
 	</body>
 </html>

@@ -12,7 +12,7 @@
 	原始数据类型
 	2、undefined			没有定义的数据，系统默认的赋值
 	4、string
-	5、Null	
+	5、Null	  				小写的null 是一个object数据类型
 	6、boolean
 	1、Number
 	
@@ -36,3 +36,36 @@
 	parseFloat 转换成一个float类型的数据
 	Math.ceil 向上取整
 	Boolean(参数)  转换成boolean类型 有就是true 没有就是false
+	
+重点强调：
+	
+	String类型（单引号和算双引号都可以）
+		有两种实现方式
+		var a = '你好' ：是基本的数据类型 typeof 是string
+		var a = new String("nihao") typeof 是object
+		
+		String中的几个重要的方法
+		1、indexof  表示的是字符串第一次出现的下标
+		2、lastindexof  表示的是字符串最后一次出现的下标
+		3、replace 表示的是替换掉原来的字符串
+		4、subStr  表示的是 截取的字符串的开始下标加上截取字符的个数
+		5、subString 表示的是截取的字符串开始的下标加上 star - end 个元素
+		
+	Object是一个超类，自定义的任何数据类型自动继承object
+		一个函数可以当好几个函数用，里面的变量可以不传递，也可以传递不满，这样就可以实现java的方法的重载了construction
+		怎么创建类，函数的两种方式使用就可以实现调用和创建对象
+		实现准备好的函数：
+			function Method(){
+				
+			}
+		1、创建对象 var a = new  Method() 注意：new的时候里面的代码就执行了
+		2、函数的调用 Method()
+		
+		注意还有一种方式
+		aa  = function(a,b){
+			this.a = a;
+			this.b = b;
+		}
+		new aa("1","2")
+		alert(aa.a)
+		alert(aa.b)
