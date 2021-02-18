@@ -12,7 +12,7 @@
 	原始数据类型
 	2、undefined			没有定义的数据，系统默认的赋值
 	4、string
-	5、Null	  				小写的null 是一个object数据类型
+	5、Null	  				小写的null 是一个object数据类型 null ==undefined 父类都是object
 	6、boolean
 	1、Number
 	
@@ -69,3 +69,10 @@
 		new aa("1","2")
 		alert(aa.a)
 		alert(aa.b)
+		boolean数据类型
+			默认的是false，当例子
+			Boolean（）函数的使用作用是讲非布尔类型转转换成Boolean类型的数据
+			var a = ""boolean函数处理的时候会转换成false 当 a = "里面有东西"就会转换成true
+			当if（10/3）{
+				alter("是一个死循环！")
+			}
