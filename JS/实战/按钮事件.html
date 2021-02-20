@@ -16,8 +16,8 @@
 			
 			// 当标签的个js代码位置调换的饿时候js代码在前标签在后的时候会报错，就像上面的代码的的顺序，解决的方法入下
 			// 表示的是在页面全部加载完毕之后在进行时间的交互
-			window.onload = read
-			function read(){
+			window.onload = ready
+			function ready(){
 				document.getElementById("button2").onclick = function(){
 					alert("你好中国")
 				}
