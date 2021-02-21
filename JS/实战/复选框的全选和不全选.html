@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>复选框的全选和不全选</title>
+	</head>
+	<body>
+		<input type="checkbox" name="" id="all" value="" />全选/不选<br>
+		<input type="checkbox" name="hobby" id="one" value="" />喝酒<br>
+		<input type="checkbox" name="hobby" id="two" value="" />烫头<br>
+		<input type="checkbox" name="hobby" id="three" value="" />抽烟
+		<script type="text/javascript">
+			var hobbies = document.getElementsByName("hobby")
+			var all = document.getElementById("all")
+			all.onclick= function(){
+			for(var i = 0;i < hobbies.length; i++){
+				hobbies[i].checked = all.checked
+				}
+			}
+			// 思路：每点一次就需要检测一下所有的按钮是否为选中，有一个动态计数的嵌套再最外层的循环里面
+			for(var i = 0;i < hobbies.length; i++){
+			hobbies[i].onclick = function(){
+				// 计数的
+				var count = 0
+				for(var i = 0;i < hobbies.length;i++){
+							if(hobbies[i].checked){
+								++count
+								if(count == hobbies.length ){
+									all.checked = true
+								}else{
+									all.checked = false
+								}
+							}
+						}
+					}	
+				}
+			
+		</script>
+	</body>
+</html>

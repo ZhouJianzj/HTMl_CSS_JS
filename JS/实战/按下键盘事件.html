@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// 这里的ready不需要添加括号
+			window.onload = ready
+			function ready(){	
+				document.getElementById("text").onkeydown = function(event){
+					// enter 键数是13 esc 键数是27
+					if(event.keyCode==13){
+						alert("周健又帅又聪明")
+					}
+			}
+		}
+		// 简洁的写法，使用到连个回调函数的，onload表示的是页面加载完毕之后才执行后面跟的js代码
+		window.onload = function(){
+			document.getElementById("text").onkeydown = function(event){
+				if(event.keyCode == 27){
+					alert("你好小周！")
+				}
+			} 
+		}
+		</script>
+		<input type="text" name="" id="text" value=""/>
+		
+		<!-- 这样的写法不行 -->
+		<a href="http://baidu.com">
+		<input type="text" name="" id="" value="按钮" onkeydown/>
+		</a>
+	</body>
+</html>

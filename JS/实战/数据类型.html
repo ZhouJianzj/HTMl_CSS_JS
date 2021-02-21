@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<script type="text/javascript">
+	// String数据类型
+		var a = new String("周健")
+		var aa = "limeiyu"
+		
+		alert(a.indexOf("周"))
+		alert(aa.lastIndexOf("i"))
+		// 一次只能替换一次，要想全部的替换掉就要使用到z正则表达式
+		alert(aa.replace("i","周"))
+		// 表示的是从0开始的后面两个元素
+		alert(aa.substr(0,2))
+		// 截取的是从0开始的到结束的两个元素
+		alert(aa.substring(0,2))
+		
+		
+	// Object数据类型
+		var aaa = new Object()
+		 // 一般不这样写 
+		 emp  =function(a,b){
+			 this.a = a
+			 this.b = b
+		 }
+		 var e1= new emp("周","健")
+		 alert(e1.a)
+		 alert(e1.b)
+		 
+		 // 在实现一个就是对象里面有方法的
+		 doo = function(name, id, price){
+			 this.name = name
+			 this.id = id
+			 this.price =price
+			// 对象里面的函数
+			 this.getPrice = function(){
+				 return this.price
+			 }
+		 }
+		 var doo1 =  new doo("李美玉","0001","10块钱一斤")
+		 document.write(doo1.getPrice())
+		 
+		 // 我们可以是由原始的属性 prototype给对象动态的添加方法，具体的代码实现在下面
+		 doo.prototype.getName = function(){
+			 return this.name
+		 }
+		 document.write(doo1.getName())
+		 
+	</script>
+	<body>
+	</body>
+</html>

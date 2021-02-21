@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			classTwo = function(a){
+				this.price = a;
+				this.getPrice = function(){
+					var price  = this.price + 1;
+					return price
+				}
+			}
+			var a = new classTwo(1);
+			classTwo.prototype.name = "鸡蛋";
+			alert(a.name)
+			alert(a.getPrice())
+		</script>
+	</body>
+</html>

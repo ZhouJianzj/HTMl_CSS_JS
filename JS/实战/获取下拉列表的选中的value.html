@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>获取下拉列表的选中的value</title>
+	</head>
+	<body>
+		<!-- 第一种方法 -->
+		<script type="text/javascript">
+			window.onload = function(){
+				var selectSet = document.getElementById("select")
+				selectSet.onchange = function(){
+					alert(selectSet.value)
+				}
+				
+			}
+		</script>
+		<select id="select">
+			<option value="hebei">河北省</option>
+			<option value ="beijing">北京</option>
+			<option value ="jiangsu">江苏</option>
+		</select>
+		<!-- 第二种方法 -->
+		<select name="" onchange="alert(this.value)">
+			<option value="北京">北京</option>
+			<option value ="江苏">江苏</option>
+			<option value ="上海">上海</option>
+		</select>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+7中控制语句
+	1·if
+	2·switch
+	3·while
+	4·do····while
+	5·for
+	6·break
+	7·continue
+	
+	for···in··（了解）
+	with （了解）
+	
+	创建数组
+	var array = [可以是任何数据类型，数组自动扩容]
+	数组的遍历
+	for（var a = 0;a < array.length;a++）{
+		
+	}
+	这个方法即可以遍历对象中的属性，也可以遍历数组中的元素
+	for（var a in array）{
+		
+	}
+	一个对象 u
+	with(u){
+		alert(属性)
+	}

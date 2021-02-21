@@ -1,0 +1,7 @@
+ECNMAsript ：js的核心语法（ES规范/ECMA-262标准）
+Bom：document object model 文档对象模型：对网页中的节点进行增删改的过程.
+Dom：Browser object model 浏览器对象模型：关闭浏览器、打开一个新的浏览器窗口、后退、前进
+	浏览器地址栏上的地址等
+	
+Bom 和 Dom 的关系
+	其实Bom包含Dom的

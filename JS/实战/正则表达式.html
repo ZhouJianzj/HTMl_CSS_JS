@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			window.onload = function(){
+				// 按钮的点击事件
+				document.getElementById("button1").onclick = function(){
+					var regExp = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+					// 正则表达式的验证
+					var ok = regExp.test(document.getElementById("email").value)
+					if(!ok){
+						document.getElementById("span1").innerText ="邮箱地址不合法!" 
+					}else{
+						document.getElementById("span1").innerHTML = "<font color= green>合法</font>"
+					}
+					document.getElementById("email").onfocus = function(){
+						document.getElementById("span1").innerText =""
+					}
+				}
+			}
+		</script>
+		<input type="text" name="" id="email" value="" />
+		<span id="span1" style="font-size: 12px;color: red;">
+			
+		</span><br>
+		<input type="button" name="" id="button1" value="验证邮箱" />
+	</body>
+</html>

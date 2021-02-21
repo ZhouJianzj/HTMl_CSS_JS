@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 这个是id选择器 */
+		#div1{
+			background-color: aquamarine;
+			width: 300px;
+			height: 300px;
+			border: 1px black solid;
+			position: absolute;
+			top: 100px;
+			left: 10px;
+		}
+		</style>
+	</head>
+	<body> 
+	<!-- innerHTML和innerText都是属性 
+		两者之间的区别在于innerHTML可以执行文本样式的代码
+		innerText不可以执行文本样式的代码-->
+	
+		<input type="button" name="" id="button1" value="设置div" />
+		<div id="div1">
+			
+		</div>
+		<script type="text/javascript">
+			document.getElementById("button1").onclick = function(){
+				document.getElementById("div1").innerHTML = "innerHTML表示的是HTML的内部的内容"
+			// 	document.getElementById("div1").innerText = "<font  color = red>这是一个不可以被innerHTML执行的文本代码，
+			//		在innerHTML中可以被执行</font> "
+			}
+		</script>
+	</body>
+</html>

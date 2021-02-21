@@ -1,0 +1,8 @@
+正则表达式 regular expression
+	1、什么是正则表达式
+	2、怎么使用正则表达式
+		
+创建正则表达式的方式有2种
+	1、var regExp = /正则表达式/falgs      这里的正则表达式也可以是普通的字符串
+	2、var regExp = new RegExp("正则表达式","falgs")
+	正则表达式对象点test（"被测试的字符串"）返回的是一个boolean类型

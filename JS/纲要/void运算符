@@ -1,0 +1,3 @@
+void运算符
+	javascript:void(0) 不进行跳转，不返回任何的数据
+	href 后面没有url地址的时候默认的是跳转到当前页面 

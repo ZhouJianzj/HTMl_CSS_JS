@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>消息框和提示框alert和window.confirm</title>
+	</head>
+	<body>
+		<input type="button" name="" id="delButton" value="删除数据" onclick="del()"/>
+		<script type="text/javascript">
+			function del(){
+				// will have a number
+				var c = window.confirm("是否确认删除数据！")
+				if(c){
+					alert("data deleting.........")
+				}
+			}
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>网页的时钟</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// 最原始的时间格式
+			var nowTime = new Date()
+			document.write(nowTime)
+			document.write("<br />")
+			// 本地的时间格式
+			nowTimeLocale = nowTime.toLocaleString()
+			document.write(nowTimeLocale)
+			document.write("<br />")
+			// 自定义时间格式
+			var year = nowTime.getFullYear()
+				//获取的数字范围是(0-11)
+			var month = nowTime.getMonth()
+				//注意的式getDay()获取的是一周的天数(0-6)
+			var day = nowTime.getDate()
+			var hours = nowTime.getHours()
+			var minutes = nowTime.getMinutes()
+			var second = nowTime.getSeconds()
+			document.write(year + "年" + (month + 1)+ "月" + day + "日" + hours + "时" + minutes + "分" + second + "秒")
+			document.write("<br />")
+			// 获取原始时间从1970年1月1日到现在的毫秒数
+			document.write(nowTime.getTime())
+		</script>
+	</body>
+</html>

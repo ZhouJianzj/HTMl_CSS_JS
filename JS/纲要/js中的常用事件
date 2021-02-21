@@ -1,0 +1,22 @@
+js中的常用事件
+	1 blur失去焦点事件
+	2 change 下拉列表选中项改变，或者文本框内容改变
+	3 click 鼠标单击事件
+	4 dblclick 鼠标双击事件
+	5 focus 获取焦点
+	6 keydown 键盘按下
+	7 keyup 键盘抬起
+	8 load 页面加载完毕
+	9 mousedown 鼠标按下
+	10 mouseover 鼠标经过
+	11 mousemove 鼠标移动
+	12 mouseout 鼠标离开
+	13 mouseup 鼠标弹起
+	14 reset 表单重置
+	15 submit 表单提交
+	16 select 文本被选择
+	
+	事件句柄的概念 事件的注册：一共有两种实现方式
+	1、按钮的属性onclick = “函数名加括号”。
+	2、纯js代码的实现，首先获取到元素在添加事件 buttonid.onclick = function(){代码块}
+	 
