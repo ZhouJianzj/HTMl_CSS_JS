@@ -1,0 +1,5 @@
+什么是json
+	javaScript object notation <-符号 (一种数据交换格式)
+有两种数据交换形式
+	1、json		体积小，易解析
+	2、xml		体积大，语法严谨

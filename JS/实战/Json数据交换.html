@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var arrayOne = [{"son":"1","sName":"周健"},
+			{"son":"2","sName":"黄忠"},
+			{"son":"3","sName":"张良"},
+			{"son":"4","sName":"好栓"}]
+			// 这里使用到了for in循环了，json数组的访问形式如下
+			for(var a in arrayOne){
+				alert(arrayOne[a].son + "," + arrayOne[a].sName)
+			}
+			
+			// 复杂一点的json数据,下面的是一个对象
+			var people = {
+				"total" : "3",
+				
+				"student" : [
+					{"son" : "1", "sName" : "周健" },
+					{"son" : "2" ,"sName" : "李美玉"}
+				]
+			}
+			alert(people.total + "," + people.student[1].son + " " + people.student[1].sName)
+		</script>
+	</body>
+</html>
