@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var emps = {
+				//注意的是后面需要加逗号的 
+				"total" : "4",
+				"emps" : [
+					// 之间也是需要加逗号的
+					{"eNo" : "32432", "eName" : "周健" ,"salary" : "8890"},
+					{"eNo" : "62434", "eName" : "张华" ,"salary" : "5890"},
+					{"eNo" : "35432", "eName" : "刘能" ,"salary" : "4590"},
+					{"eNo" : "65452", "eName" : "李浩" ,"salary" : "8490"}
+				]
+			}
+			
+			// 获取员工的信息
+			window.onload = function(){
+				document.getElementById("button1").onclick = function(){
+					var empSet = emps.emps
+					var html = ""
+					for(var a in empSet){
+						html += "<tr>"
+						html +=" <td align = center>" + empSet[a].eNo + "</td>"
+						html += "<td align = center>" + empSet[a].eName + "</td>"
+						html +=" <td align = center>" + empSet[a].salary + "</td>"
+						html += "<tr>"
+					}
+					// 执行代码
+					document.getElementById("tbody").innerHTML = html
+					}
+				}
+			
+		</script>
+		<h1>员工信息表</h1>
+		<input type="button" name="" id="button1" value="获取员工信息" />
+		<!-- 换行带下划线的 -->
+		<hr >
+		<table border="1px" align="left" width="50%">
+			<tr style="font-size: 20px;">
+				<th>编号</th>
+				<th>姓名</th>
+				<th>薪水</th>
+			</tr>
+			<tbody id="tbody">
+			<!-- <tr>
+				<td>123123</td>
+				<td>zhoujina</td>
+				<td>2342</td>
+			</tr>	 -->
+			</tbody>
+			
+		</table>
+	</body>
+</html>
