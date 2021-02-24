@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>value默认的值是空字符串</title>
+	</head>
+	<body bgcolor="cornflowerblue">
+		<!-- 注意： checkebox、radio  value默认的值是on
+					select 默认的value值是第一option
+					其它的标签 value默认的值是空的字符串-->
+		<center>
+			<form action="https://www.baidu.com" method="get">
+				<table >
+					<tr>
+						<td>用户名：</td>
+						<td><input type="text" name="userName" id="" value="" /></td>
+					</tr>
+					<tr>
+						<td>密码：</td>
+						<td><input type="password" name="password" id="" value="" /></td>
+					</tr>
+					<tr>
+						<td>性别：</td>
+						<td ><input type="radio" name="gender" align="left" value="男" />男
+							<input type="radio" name="gender" id="" value="女" />女</td>
+					</tr>
+					<tr>
+						<td>擅长技能：</td>
+						<td><input type="checkbox" name="jn"  value="java" />java
+							<input type="checkbox" name="jn"  value="c++" />c++
+							<input type="checkbox" name="jn"  value="python" />python
+							<input type="checkbox" name="jn"  value="c" />c</td>
+					</tr>
+					<tr>
+						<td>用户头像：</td>
+						<td><input type="file" name="userPic" id="" value="" /></td>
+					</tr>
+					<tr>
+						<td>籍贯：</td>
+						<td><select name="jiGuan">
+							<option value="bj">北京</option>
+							<option value="js">江苏</option>
+							<option value="sh">上海</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td>自我描述：</td>
+						<td><textarea rows="10" cols="25" name = "myDesc">
+							
+						</textarea></td>
+					</tr>
+					<tr>
+						<td><input type="reset" value="重置"/></td>
+						<td align="right"><input type="submit" value="提交"/></td>
+					</tr>
+				</table>
+				
+			</form>
+		</center>
+	</body>
+</html>
