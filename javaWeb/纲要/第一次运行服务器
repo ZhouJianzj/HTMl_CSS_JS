@@ -7,3 +7,7 @@ tomcat
 		纯代码形式的
 			再webapps文件下创建自己的一个文件夹存放自己的图片什么的然后cmd在bin目录下面开始startup启动tomcat
 			服务器，然后到浏览器去输入 http://localhost:8080/自己文件夹/自己文件格式
+		在idea中配置并使用tomcat
+			在setting中找到builder、execution、deployment中的application service 进行应用服务的tianjia
+			添加完毕之后在到run中设置 edit configuration 中点击加号添加一下tomcat server之后进去设置一下jdk什么
+			tomcat的文件路径的什么的就好了
