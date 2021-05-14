@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>过滤器，只能和选择器一起使用</title>
+		<script src="jQuery/jquery-3.6.0.js"></script>
+		<script type="text/javascript">
+			// 使用表单选择器获取
+			function fun1(){
+				// 过滤器的使用，val()是jQuery对象获取值的方法   man 
+				alert($(":radio:first").val());
+				// 指定数组下标的Dom对象   woman
+				alert($(":radio:eq(1)").val());
+				
+			}
+			
+			function fun2(){
+				// 最后一个p
+				alert($(":checkbox:last").val())
+				// 下标小于多少的 z
+				alert($(":checkbox:lt(1)").val())
+				// 下标大于多少的 p
+				alert($(":checkbox:gt(1)").val())
+			}
+		</script>
+	</head>
+	<body>
+		<input type="radio" value="man">男<br>
+		<input type="radio" value="woman" />女<br>
+		
+		<input type="checkbox" value="z" />足球<br>
+		<input type="checkbox" value="l" />篮球<br>
+		<input type="checkbox" value="p" />乒乓球
+		<input type="button" value="点击获取radio" onclick="fun1()" />
+		<input type="button" value="点击获取checkbox" onclick="fun2()" />
+	</body>
+</html>

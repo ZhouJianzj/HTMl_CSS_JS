@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>三种选择器selector</title>
+	</head>
+	<body>
+		<style type="text/css">
+			/* id选择器 */
+			#one{
+				background-color: #00FFFF;
+				height: 100px;
+				width: 100px;
+			}
+			/* class选择器*/
+			.two{
+				background-color: #228B22;
+				height: 100px;
+				width: 100px;
+			}
+			/* 标签选择器 */
+			span{
+				background-color: #4E6EF2;
+				height: 100px;
+				width: 100px;
+			}
+		</style>
+		<script src="jQuery/jquery-3.6.0.js"></script>
+		<script type="text/javascript">
+			function fun1(){
+				// 获取dom对象并且得到值
+				alert($("#one")[0].value)
+				// 使用jQuery对象设置标签的属性
+				$("#one").css("background","red")
+			}
+			function fun2(){
+				// class选择器
+				alert($(".two")[0].value)
+			}
+			function fun3(){
+				// 标签选择器，会获取到所有的相同的标签对象
+				alert($("span")[0].value)
+			}
+			function allSelector(){
+				// 选择所有标签的选择器
+				$("*").css(
+					"background-color","red"
+				)
+			}
+			function groupSelector(){
+				// 组合选择器的使用，支持不同类型的选择器的使用
+				$("#one,span").css("background-color","red")
+			}
+		</script>
+		<div id="one">使用id选择器</div>
+		<p class="two">使用class选择器</p>
+		<span >使用标签选择器</span>
+		<button id="button1" onclick="fun1()">id选择器</button>
+		<button id="button2" onclick="fun2()">class选择器</button>
+		<button id="button3" onclick="fun3()">标签选择器</button>
+		<button type="button" id="all" onclick="allSelector()">all</button>
+		<button type="button" id="group" onclick="groupSelector()">组合选择器</button>
+	</body>
+</html>

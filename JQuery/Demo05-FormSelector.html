@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jQuery/jquery-3.6.0.js"></script>
+		<script type="text/javascript">
+			// 使用表单选择器获取
+			function fun1(){
+				var jQObject = $(":radio");
+				// 遍历数组
+				for(var i = 0;i < jQObject.length; i++){
+					// 获取Dom对象的value值
+					alert(jQObject[i].value)
+				}
+			}
+			
+			function fun2(){
+				var jq = $(":checkbox")
+				for(var i = 0; i < jq.length; i++){
+					alert(jq.get(i).value)
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="radio" value="man">男<br>
+		<input type="radio" value="woman" />女<br>
+		
+		<input type="checkbox" value="z" />足球<br>
+		<input type="checkbox" value="l" />篮球<br>
+		<input type="checkbox" value="p" />乒乓球
+		<input type="button" value="点击获取radio" onclick="fun1()" />
+		<input type="button" value="点击获取checkbox" onclick="fun2()" />
+	</body>
+</html>

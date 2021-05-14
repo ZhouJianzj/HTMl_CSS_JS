@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>表单的属性过滤器</title>
+		<script src="jQuery/jquery-3.6.0.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				// enabled
+				$("#btnOne").click(function(){
+					alert($(":text:enabled").val())
+				})
+				// disabled
+				$("#btnTwo").click(function(){
+					alert($(":text:disabled").val())
+				})
+				// checked
+				$("#btnThree").click(function(){
+					alert($(":checked:checked").val())
+				})
+				// select
+				$("#btnFour").click(function(){
+					alert($("select>option:selected").val())
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<!-- 不同的属性 -->
+		<input type="text" id="textOne" value="textOne"  /><br>
+		<input type="text" id="textOne" value="textTwo" disabled="true"/><br>
+		
+		<input type="checkbox" name="" id="" value="one" />OneCheckbox <br>
+		<input type="checkbox" name="" id="" value="Two" checked="true" />TwoCheckbox <br>
+		<input type="checkbox" name="" id="" value="Three" />ThreeCheckbox <br>
+		
+		<select id="select">
+			<option value="1">1</option>
+			<option value="2" selected="selected">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+		</select><br>
+	
+		
+		<!-- 按钮 -->
+		<p>表单属性过滤器</p>
+		<input type="button" id="btnOne" value="enabled" />
+		<input type="button" id="btnTwo" value="disabled" />
+		<input type="button" id="btnThree" value="checked" />
+		<input type="button" id="btnFour" value="selected" />
+	</body>
+</html>
