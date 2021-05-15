@@ -24,11 +24,20 @@
 					alert("=====")
 					// 这里当使用jQuery的val()方法的时候会出现赋值失败所以需要使用Dom对象
 						$("#text").get(0).value = $("#btn").val()
-					}
-				)
+				})
+// 事件绑定的推荐用法使用on()
+					$("#button2").on("click",function(){
+						$("#div1").append("<button>append添加的按钮</button>")
+					})
 			})
+
 		</script>
 		<input type="text" id="text" />
 		<input type="button" id="btn" value="点击" />
+		==================================================
+		<div id="div1">
+			我是一个div
+		</div>
+		<input type="button" name="button2" id="button2" value="on()绑定事件" />
 	</body>
 </html>

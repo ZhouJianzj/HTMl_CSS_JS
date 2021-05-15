@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jQuery/jquery-3.6.0.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#button1").click(function(){
+					// val()方法，后面不带值就是获取值
+					alert($("#text1").val())
+					$("#text1").val("zhoujian")
+				})
+				$("#button2").click(function(){
+					// text()方法，后面不带值就是获取值
+					$("#h").text("ZHOUJIAN")
+					alert($("#h").text())
+				})
+				$("#button3").click(function(){
+					// attr()方法，后面不带值就是获取值，但属性一定要有表示的是获取当前属性的值
+					$("#text2").attr("disabled","disabled")
+					alert($("#text2").attr("disabled"))
+				})
+				$("#button4").click(function(){
+					// remove方法，删除所有选择到的标签包括子标签
+					$("select").remove()
+				})
+				$("#button5").click(function(){
+					// empty方法删除所有选择到的子标签
+					$("select").empty()
+				})
+				$("#button6").click(function(){
+					// append方法给父标签添加子标签
+					$("div").append("<button>按钮</button><br><table border='1px'><tr><td>nihao</td></tr></table>")
+				})
+				$("#button7").click(function(){
+					// html方法获取标签之前的信息的，会保留嵌套在里面的标签以字符串的方式展示,也可以携带参数
+					alert($("span").html())
+					$("span").html("<b>我是一个新的span</b>")
+				})
+				$("#button8").click(function(){
+					var arr =[1,2,3,4]
+					// each方法，循环数组的
+					$.each(arr,function(index,element){
+						alert("数组下标：" + index + "成员：" + element)
+					})
+				
+				})
+				$("#button9").click(function(){
+					// 循环json数组的时候，index = key  element = value
+					var json = {"name":"zhoujian","age":"23"}
+					$.each(json,function(index,element){
+						alert("key=" + index +"  "+ "value=" + element)
+					})
+				})
+				$("#button10").click(function(){
+					// 循环遍历jquery数组，获得Dom对象的value
+					$(":text").each(function(index,element){
+						// element是jQuery数组中的成员变量，也就是Dom对象
+						alert("index=" + index + "  " + "element=" + element.value)
+					})
+				})
+				$("#button11").click(function(){
+					var textObject = $(":text")
+					$.each(textObject,function(i,t){
+						alert("i=" + i + " " + "t=" + t.value)
+					})
+				})
+				// on() 方法参见Demo10
+			})
+		</script>	
+	</head>
+	<body>
+		<input type="text" name="text1" id="text1" value="hello" /><br>
+		<p id="h">HEllO WORLD</p>
+		<input type="text" name="text2" id="text2" value="zhoujian" /><br>
+		<input type="button" name="button1" id="button1" value="val()" /><br>
+		<input type="button" name="button2" id="button2" value="text()" /><br>
+		<input type="button" name="button3" id="button3" value="attr()" /><br>
+		====================================================================================
+		<select >
+			<option value="laohu">老虎</option>
+			<option value="shizi">狮子</option>
+			<option value="baozi">豹子</option>
+		</select>
+		<input type="button" name="button4" id="button4" value="remove()" /><br>
+		<select >
+			<option value="laohu">老虎</option>
+			<option value="shizi">狮子</option>
+			<option value="baozi">豹子</option>
+		</select>
+		<input type="button" name="button5" id="button5" value="empty()" /><br>
+		<div id="">
+			我是一个<b>div</b>
+		</div>
+		<input type="button" name="button6" id="button6" value="append()" /><br>
+		<span id="">
+			我是一个<b>span</b>
+		</span><br>
+		<input type="button" name="button7" id="button7" value="html()" /><br>
+		<input type="button" name="button8" id="button8" value="each() for array" /><br>
+		<input type="button" name="button9" id="button9" value="each() for json" /><br>
+		<input type="button" name="button10" id="button10" value="each() for Dom" /><br>
+		<input type="button" name="button11" id="button11" value="each() for jQuery" />
+	</body>
+</html>
